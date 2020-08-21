@@ -11,7 +11,7 @@ This script facilitates automating transfer of clipboard from one or more users 
 ##### Sharing your clipboard
 `webclipboard --mode=master --channel=math123 --debug`
 
-##### Receiving somen's clipboard
+##### Receiving someone's clipboard
 `webclipboard --mode=slave --channel=math123 --debug`
 
 ** Make sure both master and slaves use the same channel name**
