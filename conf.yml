@@ -1,0 +1,7 @@
+
+mode: HTTP
+
+dweetthing: math499
+
+encoding: base64
+pollrate: 5
