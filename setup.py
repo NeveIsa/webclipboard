@@ -2,7 +2,7 @@
 from setuptools import setup
 
 setup(name='webclipboard',
-      version='0.1.1',
+      version='0.1.2',
       description='Share your clipboard using the web.',
       url='https://github.com/NeveIsa/webclipboard',
       author='Sampad B Mohanty',

@@ -52,7 +52,14 @@ class Webclipboard:
 
     def recvclip(self,debug=False):
         try:
-            __clip = requests.get(self.DWEET_RECV_URL).json()['with'][0]['content']['clip']
+            __clip = requests.get(self.DWEET_RECV_URL).json()['with']
+            
+            # this dweet thing doesn't exist yet, i.e no one has sent any clipboard here yet
+            if __clip==404:
+                if debug:print('No one sent their clipboard yet.')
+                return ''
+        
+            __clip = __clip[0]['content']['clip']
             __clip =  base64.b64decode(__clip) if self.CONF['encoding']=='base64' else base64.b32decode(__clip)
             __clip = __clip.decode()
         except Exception as e:
