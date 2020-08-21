@@ -1,0 +1,14 @@
+#!/usr/bin/env python
+
+import sys,os
+from webclipboard import *
+
+
+usage = f'\nUSAGE ->\n\t {os.path.split(sys.argv[0])[-1]} --mode=master,slave --channel=yourUniqueChannelName [--debug]\n'
+runmode,dweetthing,debug = get_cmdline_args(usage)
+
+intro()
+
+wcb = Webclipboard(dweetthing)
+wcb.run(runmode,debug)
+

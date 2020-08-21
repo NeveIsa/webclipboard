@@ -1,0 +1,11 @@
+README.md
+setup.py
+bin/webclipboard
+webclipboard/__init__.py
+webclipboard/webclipboard.py
+webclipboard.egg-info/PKG-INFO
+webclipboard.egg-info/SOURCES.txt
+webclipboard.egg-info/dependency_links.txt
+webclipboard.egg-info/not-zip-safe
+webclipboard.egg-info/requires.txt
+webclipboard.egg-info/top_level.txt
