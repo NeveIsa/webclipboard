@@ -2,7 +2,6 @@ import clipboard
 import yaml
 import requests
 from notifypy import Notify
-import beepy
 import sys
 import time
 import base64
