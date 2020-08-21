@@ -2,10 +2,16 @@
 
 #### Share your clipboard with your friends using the web
 
+This script facilitates automating transfer of clipboard from one or more users to their friend using https://dweet.io
 
-Install using -> `pip install -U webclipboard`
+##### Installation
+`pip install -U webclipboard`
 
-To share your clipboard, run -> `webclipboard --mode=master --channel=math123 --debug`
 
+##### Sharing your clipboard
+`webclipboard --mode=master --channel=math123 --debug`
 
-If you want to receive someone's clipboard, run -> `webclipboard --mode=slave --channel=math123 --debug`
+##### Receiving somen's clipboard
+`webclipboard --mode=slave --channel=math123 --debug`
+
+** Make sure both master and slaves use the same channel name**
