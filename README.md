@@ -7,6 +7,8 @@ This script facilitates automating transfer of clipboard from one or more users 
 ##### Installation
 `pip install -U webclipboard`
 
+If you are on Linux and you don't have xclip, install xcip using `sudo apt install xclip`
+
 
 ##### Sharing your clipboard
 `webclipboard --mode=master --channel=math123 --debug`
